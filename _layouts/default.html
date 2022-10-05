@@ -55,6 +55,9 @@
         </section>
 
         <footer>
+        {% if site.email %}
+          <a href="mailto:{{ site.email }}">Get in touch about this domain</a></p>
+        {% endif %}
         {% if site.github.is_project_page %}
           {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
         {% endif %}
